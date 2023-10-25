@@ -23,6 +23,14 @@ class Phone(Field):
             raise ValueError()
 
 
+class Birthday(Field):
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    pass
+
+
 class Record:
     def __init__(self, name):
         self.name = Name(name)
